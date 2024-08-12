@@ -9,18 +9,6 @@
 
 @include tablet-M {
 	.header {
-		// .header__wrapper
-		&__wrapper {
-		}
-		// .header__logo
-		&__logo {
-			// .header__logo-link
-			&-link {
-			}
-			// .header__logo-img
-			&-img {
-			}
-		}
 		// .header__nav
 		&__nav {
 			position: fixed;
@@ -48,12 +36,6 @@
 			border-radius: 20px;
 			padding: 30px;
 			background-color: #fff;
-			// .header__menu-item
-			&-item {
-			}
-			// .header__menu-link
-			&-link {
-			}
 		}
 
 		&__burger {
