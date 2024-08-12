@@ -2,7 +2,24 @@ export const showMenu = () => {
 	const headerBurger = document.querySelector('.header__burger')
 	const headerNav = document.querySelector('.header__nav')
 
-	headerBurger.addEventListener('click', () => {
+	const openMenu = () => {
 		headerNav.classList.add('active')
+		document.body.style.overflow = 'hidden'
+	}
+	const closeMenu = () => {
+		headerNav.classList.remove('active')
+		document.body.style.overflow = 'visible'
+	}
+
+	headerBurger.addEventListener('click', () => openMenu())
+
+	headerNav.addEventListener('click', e => {
+		if (e.target.classList.contains('header__menu')) return
+
+		if (e.target.classList.contains('header__menu-link')) {
+			closeMenu()
+		}
+		
+		closeMenu()
 	})
 }
