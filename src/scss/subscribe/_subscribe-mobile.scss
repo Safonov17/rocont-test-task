@@ -1,0 +1,94 @@
+@include tablet-L {
+	.subscribe {
+		// .subscribe__wrapper
+		&__wrapper {
+			padding: 48px;
+			gap: 48px;
+		}
+		// .subscribe__content
+		&__content {
+			max-width: 363px;
+		}
+		// .subscribe__title
+		&__title {
+			margin-bottom: 24px;
+			font-size: 28px;
+			line-height: 100%;
+		}
+		// .subscribe__list
+		&__list {
+			// .subscribe__list-item
+			&-item {
+				font-size: 18px;
+				line-height: 120%;
+			}
+		}
+		// .subscribe__form
+		&__form {
+			max-width: 416px;
+		}
+		// .subscribe__btn
+		&__btn {
+			// .subscribe__btn-text
+			&-text {
+				font-size: 16px;
+			}
+		}
+	}
+}
+
+@include tablet-M {
+	.subscribe {
+		// .subscribe__wrapper
+		&__wrapper {
+			flex-direction: column;
+			gap: 0;
+			padding: 24px;
+		}
+		// .subscribe__content
+		&__content {
+			max-width: 100%;
+			width: 100%;
+		}
+		// .subscribe__list
+		&__list {
+			margin-bottom: 24px;
+		}
+		// .subscribe__form
+		&__form {
+			max-width: 100%;
+			width: 100%;
+		}
+		// .subscribe__input
+		&__input {
+			&:first-child {
+				margin-right: 8px;
+			}
+			&:not(:last-child) {
+				width: 48%;
+			}
+		}
+		// .subscribe__privacy
+		&__privacy {
+			margin-bottom: 24px;
+		}
+	}
+}
+
+@include mobile-L {
+	.subscribe {
+		// .subscribe__wrapper
+		&__wrapper {
+			background-image: none;
+		}
+	}
+}
+
+@include mobile-M {
+	.subscribe {
+		&__btn {
+			justify-content: space-between;
+			width: 100%;
+		}
+	}
+}

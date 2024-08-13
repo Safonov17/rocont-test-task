@@ -1,0 +1,110 @@
+.subscribe {
+	// .subscribe__wrapper
+	&__wrapper {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		gap: 15px;
+		border-radius: 24px;
+		padding: 64px;
+		background-color: $color-accent;
+		color: $color-light;
+		background-image: url('/vector/tree.svg');
+		background-position: right bottom;
+		background-repeat: no-repeat;
+	}
+	// .subscribe__content
+	&__content {
+		max-width: 518px;
+	}
+	// .subscribe__title
+	&__title {
+		margin-bottom: 32px;
+		font-family: $second-family;
+		font-weight: 700;
+		font-size: 40px;
+		line-height: 95%;
+	}
+	// .subscribe__list
+	&__list {
+		list-style-type: none;
+		// .subscribe__list-item
+		&-item {
+			position: relative;
+			display: flex;
+			align-items: flex-start;
+			gap: 8px;
+			padding-left: 32px;
+			font-weight: 500;
+			font-size: 21px;
+			line-height: 140%;
+			letter-spacing: -0.03em;
+			&:not(:last-child) {
+				margin-bottom: 16px;
+			}
+			&::before {
+				content: url('/vector/list-type.svg');
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+		}
+	}
+	// .subscribe__form
+	&__form {
+		max-width: 450px;
+	}
+	// .subscribe__input
+	&__input {
+		width: 100%;
+		border-radius: 40px;
+		padding: 8px 16px 8px 24px;
+		height: 40px;
+		margin-bottom: 8px;
+		font-family: $font-family;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 150%;
+		letter-spacing: -0.02em;
+		color: $color-text;
+		border: none;
+		&::placeholder {
+			color: $color-text;
+			opacity: 0.5;
+		}
+
+		@media (max-width: 375px) {
+			width: 100% !important;
+		}
+	}
+	// .subscribe__privacy
+	&__privacy {
+		display: flex;
+		align-items: center;
+		margin-bottom: 25px;
+		&::before {
+			content: url('/vector/done.svg');
+			margin-right: 8px;
+		}
+		a {
+			color: inherit;
+		}
+	}
+	// .subscribe__btn
+	&__btn {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+		border-radius: 40px;
+		padding: 0 16px 0 24px;
+		height: 52px;
+		background-color: $color-light;
+		// .subscribe__btn-text
+		&-text {
+			font-family: $second-family;
+			font-weight: 700;
+			font-size: 18px;
+			color: $color-text;
+		}
+	}
+}
