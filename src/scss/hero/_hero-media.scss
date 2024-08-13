@@ -1,0 +1,86 @@
+@include tablet-L {
+	.hero {
+		// .hero__content
+		&__content {
+			padding: 48px;
+		}
+		// .hero__title
+		&__title {
+			font-size: 32px;
+			width: 55%;
+		}
+		// .hero__text
+		&__text {
+			font-size: 18px;
+			line-height: 120%;
+		}
+		// .hero__btn
+		&__btn {
+			// .hero__btn-text
+			&-text {
+				font-size: 16px;
+			}
+		}
+	}
+}
+
+@include tablet-M {
+	.hero {
+		// .hero__content
+		&__content {
+			padding: 24px;
+		}
+		// .hero__title
+		&__title {
+			width: 50%;
+			margin-bottom: 24px;
+		}
+		// .hero__text
+		&__text {
+			max-width: 330px;
+			margin-bottom: 24px;
+		}
+		// .hero__policy
+		&__policy {
+			width: 35%;
+			gap: 0;
+			// .hero__policy-text
+			&-text {
+				font-size: 12px;
+			}
+		}
+	}
+}
+
+@include mobile-L {
+	.hero {
+		&__content {
+			padding: 40px;
+		}
+		&__title {
+			margin-bottom: 0;
+			line-height: 100%;
+		}
+		&__text {
+			display: none;
+		}
+		&__footer {
+			display: none;
+		}
+	}
+}
+
+@include mobile-M {
+	.hero {
+		&__video {
+			position: relative;
+			height: 200px;
+		}
+		&__content {
+			padding: 0;
+		}
+		&__title {
+			display: none;
+		}
+	}
+}
