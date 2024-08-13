@@ -4,11 +4,11 @@ export const showMenu = () => {
 
 	const openMenu = () => {
 		headerNav.classList.add('active')
-		document.body.style.overflow = 'hidden'
+		document.body.style.overflowY = 'hidden'
 	}
 	const closeMenu = () => {
 		headerNav.classList.remove('active')
-		document.body.style.overflow = 'visible'
+		document.body.style.overflowY = 'visible'
 	}
 
 	headerBurger.addEventListener('click', () => openMenu())
