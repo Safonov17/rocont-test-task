@@ -42,3 +42,11 @@ body {
 	padding: 0 10px;
 	margin: 0 auto;
 }
+
+.container-left {
+	padding-left: calc((100% - 1180px) / 2 + 10px);
+
+	@include desktop {
+		padding-left: 10px;
+	}
+}
