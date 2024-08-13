@@ -14,6 +14,21 @@ button {
 	cursor: pointer;
 }
 
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+section {
+	margin-bottom: 96px;
+	@include tablet-L {
+		margin-bottom: 64px;
+	}
+	@include tablet-M {
+		margin-bottom: 64px;
+	}
+}
+
 body {
 	background-color: $background-color;
 	font-family: $font-family;
