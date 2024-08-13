@@ -1,0 +1,128 @@
+.gallery {
+	// .gallery__wrapper
+	&__wrapper {
+		position: relative;
+	}
+	// .gallery__control
+	&__controls {
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 100%;
+		padding-right: 61px;
+	}
+	// .gallery__title
+	&__title {
+		max-width: 175px;
+		font-family: $second-family;
+		font-weight: 700;
+		font-size: 40px;
+		line-height: 95%;
+		color: $color-text;
+	}
+	// .gallery__buttons
+	&__buttons {
+		display: flex;
+		align-items: center;
+		gap: 16px;
+	}
+	// .gallery__btn
+	&__btn {
+		border-radius: 50px;
+		background-color: transparent;
+		svg {
+			path {
+				transition: stroke 0.25s;
+			}
+		}
+		@include hover {
+			&:hover {
+				background-color: $color-accent;
+				svg {
+					fill: $color-accent;
+					path {
+						stroke: $color-light;
+					}
+				}
+			}
+		}
+		// .gallery__btn-prev
+		&-prev {
+		}
+		// .gallery__btn-next
+		&-next {
+		}
+	}
+	// .gallery__slider
+	&__slider {
+		padding-left: 244px;
+	}
+	// .gallery__card
+	&__card {
+		position: relative;
+		width: fit-content;
+		border-radius: 24px;
+		overflow: hidden;
+		// .gallery__card-overlay
+		&-overlay {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			width: 100%;
+			height: 100%;
+			background: linear-gradient(
+				180deg,
+				rgba(84, 140, 12, 0) 0%,
+				#548c0c 100%
+			);
+			opacity: 0;
+			transition: opacity 0.3s;
+		}
+		// .gallery__card-img
+		&-img {
+			vertical-align: bottom;
+		}
+		// .gallery__card-text
+		&-text {
+			position: absolute;
+			left: 32px;
+			right: 32px;
+			bottom: 32px;
+			transform: translateY(200%);
+			z-index: 10;
+			transition: transform 0.3s ease-in-out;
+		}
+		// .gallery__card-title
+		&-title {
+			font-family: $second-family;
+			font-weight: 700;
+			font-size: 24px;
+			line-height: 110%;
+			color: $color-light;
+			margin-bottom: 8px;
+		}
+		// .gallery__card-subtitle
+		&-subtitle {
+			font-family: $font-family;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 100%;
+			letter-spacing: -0.02em;
+			color: $color-light;
+		}
+
+		@include hover {
+			&:hover {
+				.gallery__card-overlay {
+					opacity: 1;
+				}
+				.gallery__card-text {
+					transform: translateY(0);
+				}
+			}
+		}
+	}
+}
