@@ -3,5 +3,10 @@
 @import './variables';
 @import './base';
 
-@import './header';
-@import './header-media';
+@import './header/header';
+@import './header/header-media';
+
+@import './hero/hero';
+@import './hero/hero-content';
+@import './hero/hero-content-mobile';
+@import './hero/hero-media';
