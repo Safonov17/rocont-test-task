@@ -1,0 +1,89 @@
+@include tablet-L {
+	.contacts {
+		// .contacts__content
+		&__content {
+			padding: 48px;
+		}
+		// .contacts__title
+		&__title {
+			font-size: 28px;
+			line-height: 100%;
+		}
+		// .contacts__item
+		&__item {
+			font-size: 18px;
+			line-height: 120%;
+		}
+		// .contacts__phones
+		&__phones {
+			white-space: nowrap;
+		}
+		// .contacts__btn
+		&__btn {
+			// .contacts__btn-text
+			&-text {
+				font-size: 16px;
+			}
+		}
+		// .contacts__map
+		&__map {
+			width: 47%;
+		}
+	}
+}
+
+@include tablet-M {
+	.contacts {
+		// .contacts__wrapper
+		&__wrapper {
+			flex-direction: column;
+		}
+		// .contacts__content
+		&__content {
+			padding: 24px;
+			gap: 24px;
+		}
+		// .contacts__phones
+		&__phones {
+			flex-wrap: wrap;
+		}
+		// .contacts__map
+		&__map {
+			width: 100%;
+			#map {
+				height: 250px;
+				width: 100%;
+			}
+		}
+	}
+}
+
+@include mobile-L {
+	.contacts {
+		// .contacts__map
+		&__map {
+			#map {
+				height: 220px;
+			}
+		}
+	}
+}
+
+@include mobile-M {
+	.contacts {
+		// .contacts__btn
+		&__btn {
+			justify-content: space-between;
+			width: 100%;
+			// .contacts__btn-text
+			&-text {
+			}
+		}
+		// .contacts__map
+		&__map {
+			#map {
+				height: 200px;
+			}
+		}
+	}
+}

@@ -1,0 +1,124 @@
+.contacts {
+	// .contacts__wrapper
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+		gap: 8px;
+	}
+	// .contacts__content
+	&__content {
+		display: flex;
+		flex-direction: column;
+		gap: 32px;
+		background-color: $color-light;
+		padding: 64px;
+		border-radius: 24px;
+		overflow: hidden;
+	}
+	// .contacts__title
+	&__title {
+		font-family: $second-family;
+		font-weight: 700;
+		font-size: 40px;
+		line-height: 95%;
+	}
+	// .contacts__list
+	&__list {
+		display: flex;
+		flex-direction: column;
+		list-style-type: none;
+	}
+	// .contacts__item
+	&__item {
+		font-family: $font-family;
+		font-weight: 500;
+		font-size: 21px;
+		line-height: 140%;
+		letter-spacing: -0.03em;
+		a {
+			text-decoration: none;
+			color: inherit;
+		}
+	}
+	// .contacts__address
+	&__address {
+		font-style: normal;
+		margin-bottom: 16px;
+		&::before {
+			content: url('/vector/map.svg');
+		}
+	}
+	// .contacts__opening
+	&__opening {
+		margin-bottom: 16px;
+		&::before {
+			content: url('/vector/time.svg');
+		}
+	}
+	// .contacts__phones
+	&__phones {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+	// .contacts__phone
+	&__phone {
+		margin-bottom: 16px;
+		&:first-child {
+			margin-right: 32px;
+		}
+		&::before {
+			content: url('/vector/phone.svg');
+		}
+	}
+	// .contacts__email
+	&__email {
+		&::before {
+			content: url('/vector/mail.svg');
+		}
+	}
+	&__address,
+	&__opening,
+	&__phone,
+	&__email {
+		display: flex;
+		align-items: flex-start;
+		gap: 8px;
+		&::before {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 24px;
+			height: 24px;
+			margin-top: 2px;
+		}
+	}
+	// .contacts__btn
+	&__btn {
+		flex: 0 0 auto;
+		display: flex;
+		align-items: center;
+		gap: 8px;
+		padding: 0 16px 0 24px;
+		width: min-content;
+		height: 52px;
+		background-color: $color-accent;
+		border-radius: 40px;
+		// .contacts__btn-text
+		&-text {
+			font-family: $second-family;
+			font-weight: 700;
+			font-size: 18px;
+			color: $color-light;
+		}
+	}
+	// .contacts__map
+	&__map {
+		border-radius: 24px;
+		overflow: hidden;
+		#map {
+			width: 578px;
+			height: 100%;
+		}
+	}
+}
