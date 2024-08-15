@@ -11,6 +11,12 @@
 		a {
 			color: inherit;
 			text-decoration: none;
+			transition: color 0.3s;
+			@include hover {
+				&:hover {
+					color: $color-accent;
+				}
+			}
 		}
 	}
 	// .footer__list
