@@ -7,3 +7,4 @@ showMenu()
 gallerySlider()
 showMap()
 formValidation()
+AOS.init();
