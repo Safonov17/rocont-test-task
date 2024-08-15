@@ -29,29 +29,36 @@
 	}
 	// .gallery__btn
 	&__btn {
-		border-radius: 50px;
-		background-color: transparent;
-		svg {
-			path {
-				transition: stroke 0.25s;
-			}
-		}
-		@include hover {
-			&:hover {
-				background-color: $color-accent;
-				svg {
-					fill: $color-accent;
-					path {
-						stroke: $color-light;
-					}
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+		width: 48px;
+		height: 20px;
+		transition: background-image 0.3s, filter 0.3s, opacity 0.3s;
+		&:first-child {
+			background-image: url(/vector/gallery-arrow-left.svg);
+			@include hover {
+				&:hover {
+					background-image: url(/vector/gallery-arrow-left-hover.svg);
 				}
 			}
 		}
-		// .gallery__btn-prev
-		&-prev {
+		&:last-child {
+			background-image: url(/vector/gallery-arrow-right.svg);
+			@include hover {
+				&:hover {
+					background-image: url(/vector/gallery-arrow-right-hover.svg);
+				}
+			}
 		}
-		// .gallery__btn-next
-		&-next {
+
+		@include hover {
+			&:hover {
+				filter: drop-shadow(0 0 5px $color-accent);
+			}
+			&:active {
+				opacity: 0.7;
+			}
 		}
 	}
 	// .gallery__slider
