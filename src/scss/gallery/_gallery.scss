@@ -57,6 +57,12 @@
 	// .gallery__slider
 	&__slider {
 		padding-left: 244px;
+		.swiper {
+			cursor: grab;
+			&:active {
+				cursor: grabbing;
+			}
+		}
 	}
 	// .gallery__card
 	&__card {
