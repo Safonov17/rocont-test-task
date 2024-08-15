@@ -5,8 +5,9 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.ico" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Collagen</title>
-		<link rel="stylesheet" href="/src/css/normalize.css" />
+		<link rel="stylesheet" href="/libs/normalize.css" />
 		<link rel="stylesheet" href="/libs/swiper-bundle.min.css" />
+		<link rel="stylesheet" href="/libs/aos.css" />
 		<link rel="stylesheet" href="/src/css/styles.css" />
 	</head>
 	<body>
@@ -49,7 +50,7 @@
 			<!-- /.container -->
 		</header>
 		<main class="main">
-			<section class="hero">
+			<section class="hero" data-aos="fade-down">
 				<div class="container">
 					<div class="hero__wrapper">
 						<video class="hero__video" src="/video.mp4" autoplay loop></video>
@@ -553,6 +554,7 @@
 		<script src="/libs/swiper-bundle.min.js"></script>
 		<script src="https://api-maps.yandex.ru/2.1/?apikey=74cd8f3b-fc88-4e16-91da-c80027afc006
 			&lang=ru_RU"></script>
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 		<script type="module" src="/src/js/script.js"></script>
 	</body>
 </html>
