@@ -106,9 +106,9 @@
 		align-items: center;
 		justify-content: center;
 		gap: 8px;
-		padding: 0 16px 0 24px;
+		padding: 16px 16px;
+		padding-left: 24px;
 		width: min-content;
-		height: 52px;
 		background-color: $color-accent;
 		border-radius: 40px;
 		transition: filter 0.3s, opacity 0.3s;

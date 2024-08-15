@@ -103,8 +103,8 @@
 		justify-content: center;
 		gap: 8px;
 		border-radius: 40px;
-		padding: 0 16px 0 24px;
-		height: 52px;
+		padding: 16px 16px;
+		padding-left: 24px;
 		background-color: $color-light;
 		transition: filter 0.3s, opacity 0.3s;
 
