@@ -22,6 +22,9 @@ export const gallerySlider = () => {
 			},
 			1200: {
 				slidesPerView: 3.09
+			},
+			1700: {
+				slidesPerView: 3.8
 			}
 		}
 	})
