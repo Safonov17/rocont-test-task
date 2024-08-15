@@ -40,6 +40,7 @@
 		transition: filter 0.3s, opacity 0.3s;
 		// .hero__btn-text
 		&-text {
+			display: block;
 			font-family: $second-family;
 			font-weight: 700;
 			font-size: 18px;
