@@ -29,7 +29,7 @@
 }
 
 @mixin hover {
-	@media (hover: none) and (pointer: coarse) {
+	@media (hover: hover) {
 		@content;
 	}
 }
