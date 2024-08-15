@@ -7,6 +7,6 @@ showMenu()
 gallerySlider()
 showMap()
 formValidation()
-AOS.init({
-	disable: 'mobile'
-})
+// AOS.init({
+// 	disable: 'mobile'
+// })
