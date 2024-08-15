@@ -44,3 +44,21 @@
 		}
 	}
 }
+
+@include mobile-L {
+	.header {
+		// .header__menu
+		&__menu {
+			width: 60%;
+		}
+	}
+}
+
+@include mobile-M {
+	.header {
+		// .header__menu
+		&__menu {
+			width: 85%;
+		}
+	}
+}
