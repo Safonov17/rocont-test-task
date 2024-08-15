@@ -3,7 +3,7 @@ export const preloader = () => {
 		var preloader = document.getElementById('preloader')
 		preloader.style.display = 'none'
 		AOS.init({
-			disable: mobile
+			disable: 'mobile'
 		})
 	})
 }
