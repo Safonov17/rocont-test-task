@@ -18,6 +18,14 @@
 		&__phones {
 			white-space: nowrap;
 		}
+		&__address,
+		&__opening,
+		&__phone,
+		&__email {
+			&::before {
+				margin-top: initial;
+			}
+		}
 		// .contacts__btn
 		&__btn {
 			// .contacts__btn-text

@@ -21,11 +21,15 @@
 			&-item {
 				font-size: 18px;
 				line-height: 120%;
+
+				&::before {
+					top: -1px;
+				}
 			}
 		}
 		// .subscribe__form
 		&__form {
-			max-width: 416px;
+			width: 49.7%;
 		}
 		// .subscribe__btn
 		&__btn {
@@ -59,14 +63,18 @@
 			max-width: 100%;
 			width: 100%;
 		}
+		// .subscribe__inputs
+		&__inputs {
+			flex-direction: row;
+			gap: 8px;
+		}
+		// .subscribe__input-block
+		&__input-block {
+			width: 48%;
+		}
 		// .subscribe__input
 		&__input {
-			&:first-child {
-				margin-right: 8px;
-			}
-			&:not(:last-child) {
-				width: 48%;
-			}
+			width: 100%;
 		}
 		// .subscribe__privacy
 		&__privacy {
@@ -80,6 +88,18 @@
 		// .subscribe__wrapper
 		&__wrapper {
 			background-image: none;
+		}
+		// .subscribe__inputs
+		&__inputs {
+			flex-direction: column;
+		}
+		// .subscribe__input-block
+		&__input-block {
+			width: 100%;
+		}
+		// .subscribe__input
+		&__input {
+			width: 100%;
 		}
 	}
 }

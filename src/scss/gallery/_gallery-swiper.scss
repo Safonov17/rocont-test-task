@@ -11,6 +11,15 @@
 		}
 		// .swiper-slide
 		&-slide {
+			// .swiper-slide-active
+			&-active {
+				& .gallery__card-overlay {
+					opacity: 1;
+				}
+				& .gallery__card-text {
+					transform: translateY(0);
+				}
+			}
 		}
 	}
 }

@@ -9,7 +9,7 @@
 		padding: 64px;
 		background-color: $color-accent;
 		color: $color-light;
-		background-image: url('/vector/tree.svg');
+		// background-image: url('/vector/tree.svg');
 		background-position: right bottom;
 		background-repeat: no-repeat;
 	}
@@ -46,13 +46,18 @@
 				content: url('/vector/list-type.svg');
 				position: absolute;
 				left: 0;
-				top: 0;
+				top: 3px;
 			}
 		}
 	}
 	// .subscribe__form
 	&__form {
-		max-width: 450px;
+		width: 43.6%;
+	}
+	// .subscribe__inputs
+	&__inputs {
+		display: flex;
+		flex-direction: column;
 	}
 	// .subscribe__input
 	&__input {
@@ -82,6 +87,10 @@
 		display: flex;
 		align-items: center;
 		margin-bottom: 25px;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 100%;
+		letter-spacing: -0.02em;
 		&::before {
 			content: url('/vector/done.svg');
 			margin-right: 8px;
